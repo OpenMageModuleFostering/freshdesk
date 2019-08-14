@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/freshdesk",
+    "type": "magento-module",
+    "license": "community",
+    "homepage": "",
+    "description": "Freshdesk Extension",
+    "authors": [
+    {
+        "name": "MagePlace",
+        "email": "info@mageplace.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
