@@ -14,12 +14,10 @@
 class Mageplace_Freshdesk_Block_Field_Custom_Number extends Mageplace_Freshdesk_Block_Field_Text
 {
     const CLASS_NAME_VALIDATE_NUMBER = 'validate-number';
-    const CLASS_NAME_QTY             = 'qty';
 
 
     protected function _beforeToHtml()
     {
-        $this->addFieldClass(self::CLASS_NAME_QTY);
         $this->addFieldClass(self::CLASS_NAME_VALIDATE_NUMBER);
 
         return Mageplace_Freshdesk_Block_Field_Abstract::_beforeToHtml();

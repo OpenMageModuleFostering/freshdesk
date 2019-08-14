@@ -20,6 +20,9 @@ class Mageplace_Freshdesk_Model_Freshdesk_Fields extends Mageplace_Freshdesk_Mod
     const URL_TICKET_FIELDS     = 'ticket_fields';
     const URL_XML_TICKET_FIELDS = 'ticket_fields.xml';
 
+    const PARAM_FIELD_OPTIONS = "field_options";
+    const PARAM_FIELD_SECTION = "section";
+
     const URL_PARAM_FORMAT = 'format';
 
     const PARAM_ID           = 'id';
@@ -92,7 +95,7 @@ class Mageplace_Freshdesk_Model_Freshdesk_Fields extends Mageplace_Freshdesk_Mod
                     $orderField        = null;
                     $ticketFields      = array();
                     foreach ($arrTicketFields as $field) {
-                        if (!empty($field[self::PARAM_TICKET_FIELD]) && !empty($field[self::PARAM_TICKET_FIELD]) && $field[self::PARAM_TICKET_FIELD][self::PARAM_ACTIVE]) {
+                        if (!empty($field[self::PARAM_TICKET_FIELD]) && !empty($field[self::PARAM_TICKET_FIELD]) && $field[self::PARAM_TICKET_FIELD][self::PARAM_ACTIVE] && $field[self::PARAM_TICKET_FIELD][self::PARAM_FIELD_OPTIONS][self::PARAM_FIELD_SECTION]!= 1) {
                             $ticketFields[strval($field[self::PARAM_TICKET_FIELD][self::PARAM_ID])] = $field[self::PARAM_TICKET_FIELD];
                             if ($orderField === null && $field[self::PARAM_TICKET_FIELD][self::PARAM_LABEL] == $orderFieldMagento) {
                                 $orderField = $field[self::PARAM_TICKET_FIELD];

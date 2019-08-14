@@ -69,6 +69,7 @@ class Mageplace_Freshdesk_Adminhtml_Freshdesk_TicketController extends Mage_Admi
     {
         try {
             $post = $this->getRequest()->getPost();
+            error_log($post,0);
             if (empty($post)) {
                 throw new Mageplace_Freshdesk_Exception($this->__('Wrong request data'));
             }

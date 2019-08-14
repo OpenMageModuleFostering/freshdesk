@@ -42,6 +42,7 @@ class Mageplace_Freshdesk_Model_Freshdesk_Notes extends Mageplace_Freshdesk_Mode
             $this->_ticketId = (int)$data[self::PARAM_TICKET_ID];
             unset($data[self::PARAM_TICKET_ID]);
         }
+        $data[self::PARAM_PRIVATE] = false;
 
         parent::setDataFromArray($data);
 

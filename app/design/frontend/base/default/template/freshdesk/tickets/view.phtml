@@ -86,23 +86,25 @@
         </div>
 
         <?php foreach ($this->getNotes() as $note) : ?>
-            <div class="note-row">
-                <div class="col-1">
-                    <div class="box">
-                        <div class="box-title">
-                            <strong><?php echo $note->getUserName(); ?></strong>
+            <?php if($note["private"] != 1) :?>
+                <div class="note-row">
+                    <div class="col-1">
+                        <div class="box">
+                            <div class="box-title">
+                                <strong><?php echo $note->getUserName(); ?></strong>
+                            </div>
+                            <div class="box-date">
+                                <?php echo $this->getDateDiff($note->getCreatedAt(), $this->__('said')); ?>
+                            </div>
                         </div>
-                        <div class="box-date">
-                            <?php echo $this->getDateDiff($note->getCreatedAt(), $this->__('said')); ?>
+                    </div>
+                    <div class="col-2">
+                        <div class="box-note">
+                            <?php echo $note->getBodyHtml(); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="box-note">
-                        <?php echo $note->getBodyHtml(); ?>
-                    </div>
-                </div>
-            </div>
+            <?php endif; ?>
         <?php endforeach; ?>
 
         <div class="note-row">
