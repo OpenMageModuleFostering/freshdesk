@@ -1,27 +1,22 @@
-# Freshdesk Extension for Magento
+## Original Package Description
 
-The Freshdesk extension for Magento brings all customer conversations into the store. It lets you provide exceptional customer support across channels right from your store.	
-
-
-With the Freshdesk extension, you can: 
-- Create Freshdesk support tickets from within Magento 
-- View all tickets inside Magento and related tickets on customer dashboard 
-- Create support tickets when a customer submits a Contact Us form 
-- Enable feedback widget across your store with one click 
-- Allow customers to create, view and respond to their tickets from your Magento store
-
-For more details please check our [Magento listing.](https://www.magentocommerce.com/magento-connect/freshdesk.html)
+Freshdesk Extension
 
 
-## Contributing
+## Disclaimer
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+This is a Repository imported from the Magento Marketplace, formerly known as Magento connect.
+The purpose is, to archive them in a permanent way, you can read more about it in our blogbost: https://openmage.github.io/2019/08/18/new-home-magento-connect-modules.html
+There is a chance, this repository misses some of the newer version.
+We rely on our users to inform us about newer Releases. And if they can provide them to us, this would be even better.
 
+### The original source is already on a public Git?
 
-## Copyright and License
+Please also inform us about them, then we can mark our repository as discontinued and refer to the other Repository.
 
-Copyright © 2016 Freshdesk Inc. All Rights Reserved.
+### Contact us
+
+the easiest way is to create an Issue here, we have an eye on them.
+
+Alternative you can try to contact @Flyingmana directly.
+ 
